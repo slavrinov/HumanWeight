@@ -1,0 +1,9 @@
+<html>
+<body>
+<h1>
+	<h1>${fooTestResult}</h1>
+    <br>
+    <br>
+    <h3>${msg}</h3>
+</body>
+</html>
