@@ -30,30 +30,9 @@ public class FooTestService {
         if (index-1 > level/2) {
             index = level-index+2;
         }
-        if (index==1) {
-            return level*w/2;
-        }else if (index ==2){
-            return level*w/2+w;
-        }else if (index ==3) {
-            return level*w/2+w+ w*sum(level,2);
-            //see further realization
-        }else return -1;
+        //realize this
+        return level*w/2+w*(index-1)
     }
-
-
-    private double sum(int level,int i) {
-        //(1+(1.00/(index-1)));
-        double sum =0.0;
-        int k=0;
-        while (k<level-3) {
-            sum = sum+ 1.00/i;
-            //next i by multiplication on two
-            i=i*2;
-            k++;
-        }
-        return sum;
-    }
-
 
 
 }
